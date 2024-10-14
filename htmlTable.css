@@ -1,0 +1,57 @@
+th{
+    font-family: 'Lucida Sans';
+    font-weight: 100;
+    font-size: medium;
+    border-style: groove;
+    padding: 0px;
+    margin-left: 1px;
+    margin-top: 1px;
+    text-align: center;
+}
+td{
+    background-color: rgb(212, 126, 251);
+    color: black;
+    font-weight: 100;
+    border-style: groove; 
+    padding-bottom: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: left;
+    
+}
+thead{
+    background-color:aquamarine;
+    color: black;
+    padding: 1px;
+    text-align: left;
+}
+body{
+    background-image: url(./CarsLand.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: cover;
+}
+button{
+    background-color: aquamarine;
+    font-family: Impact;
+    font-stretch: wider;
+    height: 40px;
+    font-size: larger;
+    border-radius: 50px;
+}
+h1{
+    color: rgb(212, 126, 251);
+    text-align: center;
+}
+footer{
+    margin-block-end: auto;
+    margin-bottom: auto;
+    font-family: Cambria;
+    color: rgb(246, 88, 190);
+    border-color: blueviolet; 
+}
+#howlingWolf {
+    height: 200px;
+    width: 300px;
+}
