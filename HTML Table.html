@@ -1,0 +1,240 @@
+<!--10/13/2024-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="htmlTable.css">
+    <script src="./htmlTable.js"></script>
+
+    <!--Set up a table that has 4 Rows & 3 Columns-->
+    <header><h1>HTML Table</h1></header>
+    
+        <table id="FourbyThree">
+                    <thead>
+                        <tr>    
+                            <!--Column headers that are aligned side by side in one row, divided by gridlines-->
+                            <th><h2>Week 1</h2></th>
+                            <th><h2>Week 2</h2></th>
+                            <th><h2>Week 3</h2></th>
+                            <th><h2>Week 4</h2></th>
+                            <th><h2>Week 5</h2></th>
+                        </tr>
+                    </thead>
+                <body>
+                    <!--Navigation buttons to link to different html pages of past assignments-->
+                    <nav id="navG">
+                        <button><a href="C:/Users/kahil/UAT/CSC102/Assignments/Assignment%201.1%20The%20Foundation/Assignment%201.1/index.html">Meme/Index</a></button>
+                        <button><a href="C:/Users/kahil/UAT/CSC102/Assignments/Assignment%202.1%20Using%20CSS/Assignment%202.1/boards.html">Boards</a></button>
+                        <button><a href="C:/Users/kahil/UAT/CSC102/Assignments/Assignment%202.2%20Building%20blocks%20for%20Javascript/Assignment%202.2/game.html">Game</a></button>
+                        <button><a href="C:/Users/kahil/UAT/CSC102/Assignments/Assignment%203.1%20Palindrome%20Checker/strings.html">Palindrome</a></button>
+                        <button><a href="C:/Users/kahil/UAT/CSC102/Assignments/Assignment%203.2%20User%20Input%20Validation/strings2.html">Input Validation</a></button>
+                        <button><a href="C:/Users/kahil/UAT/CSC102/Assignments/Assignment%204.1%20Event%20Driven%20Programming/movableImageSS.html">Moving Image</a></button>
+                        <button><a href="C:/Users/kahil/UAT/CSC102/Assignments/Assignment%204.2%20Incorporate%20Audio/strings2.html">Incorporating Audio</a></button>
+                
+                    </nav><br>
+
+                    <!--Audio player for background music while exploring my html page-->
+                    <audio controls loop>
+                        <audio id="fairyTaleMusic"></audio>
+                        <source src="./disney_typeMusic.mp3" type="audio/mp3">
+                    </audio>
+
+                        <tr> <!--First row, set up underneath the column headers, divided by gridlines-->
+                            </td> <!--Topics we covered throughout the duration of class-->
+                            <td><h3>Introduction - HTML, CSS & Javascript<h3>
+                            <td><h3>Functions, Decisions and Loops<h3></td>
+                            <td><h3>Debugging, String Manipulation and Input Validation<h3></td>
+                            <td><h3>Event Driven Programming and Programming & Sofware Development Processes<h3></td>
+                            <td><h3>Data Structures - Arrays and Final Project<h3></td>   
+                        </tr>
+
+                        <tr><!--Second row, set up underneath the column headers, divided by gridlines-->
+                            <!--Explanation of selected key points that were discussed in class corresponding to each header category-->
+                            <td><p>
+                                In 1989 Timothy Berners-Lee among other researchers at CERN created hypertext, which enables users to navigate to separate and related documents by using key words 
+                                to link those documents together. For this concept to work a "markup language" that allowed links to be added to text had to be created.  HTML files are plain text files.
+                                The extension .html  and the entire document is encased within html open and close tags.
+                                </p>
+
+                                HTML page is separated into two parts:
+                                <h4><.HEAD tags>
+                                    Describes the page itself <br><br>
+                                    <.TITLE tags>
+                                        Positioned in between the HEAD tags and is displayed on the web browser tab; used by search engines and OS; signaling to the user what they are viewing. <br><br>
+                                    <.BODY tags>
+                                        Contains the information we display to the user. Javascript can be used here to output information to the user. <br><br>
+                                        <.P tags>
+                                            Used to wrap around each paragraph of text
+                                    
+                                    </h4>
+                            <td>By definition "a function is a module that returns a value back to the part of the program that called it."
+                                There are libraries of functions that many languages provide for. Functions are like modules, with the exception
+                                that it returns a value that your program can use.
+                            <td>Debugging is a method of identifying the problem (aka bugs), isolating it at the source, correcting the errors in the code, and then testing it. 
+                                Debugging helps troubleshoot the root cause of coding errors, prevents software malfunctions and improves performance. Debugging is done when 
+                                a developer finds coding errors in a program and is able to reproduce it. When attempting to identify bugs, an integrated development environment 
+                                (IDE) is a very useful tool, highlighting lines of code corresponding to error messages simutaneously in real-time effectively pinpointing the root 
+                                of the problem. 
+                            <td>Software Development refers to to a process where a series of tasks are dedicated to creating, designing, deploying, testing,
+                                maintaining, and supporting software applications. The function of these processes is to create programmable software to cater to
+                                the business or personal objectives and goals through writing computer code.
+                                <h4>There are 6 stages to the Software Development Cycle (SDLC): <br>
+                                1. Planning <br>
+                                2. Analysis <br>
+                                3. Design <br>
+                                4. Implementation <br>
+                                5. Testing & Integration <br>
+                                6. Maintenance</h4>
+                                <h4>Popular Software Development Processes are: <br> <br>
+                                -Waterfall Development: Steps are executed linearly and sequentially in a waterfall approach. <br> <br>
+                                -Agile Development: Focues on flexibility, continuously evolving functionality by an incremental approach. <br> <br>
+                                -Rapid Application Development (RAD): Focuses prototyping on speed and flexibility over strict planning. <br> <br>
+                                -Rational Unified Process (RUP): Framework that is tailored by organizations to best suit the specific needs of different projects. <br>
+                            </td>
+                            <td>Arrays were created in programming to store and manage multiple values of the same data type under a single variable name, enabling programmers
+                                to easily access and manipulate it as a unit, leading to a more concise code that's eaiser to manage. Arrays can be accessed efficiently by their index number. 
+                                Examples of creating an array literal in Javascript:
+                                <h4>var starWarsLightSabers = ["green", "white", "blue","purple", "yellow"]; <br>
+                                <br>
+                                var starWarsLightSabers = new Array ("Jedi", "Sith")</h4><br>
+                                Creating an empty array then adding to the array with a push: <br>
+                                <h4>var starWarsLightSabers = [ ]; 
+                                starWarsLightSabers.add("Pssshhew")</h4><br>
+                                <!--button that makes a sound when clicked that sounds like a lightsaber-->
+                                <button id="onbtn" onclick="saberOn()">Press here for Lightsaber</button>  
+                                <!--video player being used as a visual aid to show lightsaber being turned on to complement lightsaber sound--> 
+                                <video id="grLightSaber" src="./lightsaber clip.mp4" width="300px" height="200px" controls autoplay loop></video><br>
+                        </tr>
+
+                        <tr><!--Third row, set up underneath the column headers, divided by gridlines-->
+                            <!--Explanation of selected key points that were discussed in class corresponding to each header category-->
+                            <td>Pei-Yuan Wei created ViolaWWW Hypermedia Browser in 1991 and incorporated his own css language into his browser. However, 
+                                it never became the standard for many reasons. There were other iterations of a stylesheet language by others but it wasn't until
+                                Hakon Wium Lie created Cascading Style Sheets (CSS) that it became the standard. CSS is a programming language where we state 
+                                descriptive rules for our HTML document one by one. 
+                                The general syntax of CSS style are as follows: <br>
+                            <h4> selector {<br>
+                                /* declaration block */<br>
+                                property1: value1; <br>
+                                property2: value2; <br>
+                                property3: value3; <br> 
+                                } </h4>
+                            </td> 
+                            <td>By definition "a decision structure (or selection structure) allows a program to perform actions only under certain conditions."
+                                The following are different types of decisions (ie.if statements): 
+                                <h4>-if also known as a single alternative <br>
+                                -if then else also known as a dual alternative <br>
+                                -case structure known for various alternatives <br> </h4>
+                            </td>2
+                            <td>Strings hold data that represent a sequence of characters, words or symbols as a single unit that are enlcosed in quotation marks.
+                                Strings can be stored as a constant or a variable that is fixed to an element or allows it be changed. String manipulation refers to
+                                the process of modifying, extracting, or transforming strings. One example is concatenation; meaning to join two or more strings together. 
+                                Slicing strings to get only a portion of a string is an example of extracting strings. By changing specific parts of a string you can replace
+                                characters of a string. Converting a string to upper and lower case is an example of transforming strings. You can split a string by breaking it 
+                                into an array of substrings. Using the trim feature you can remove leading or trailing whitespaces. Here are some string manipulation methods:
+                            <h4>-String.charAt() <br>
+                                -String.lenght <br>
+                                -String.substr() <br>
+                                -String.replace() <br></h4>
+                            </td>
+                            <td>"Event driven programming is known as an event loop. The loop performs 3 tasks: gather inputs, process data,
+                            and outputs the results." Graphical User Interfacaes (GUI) programs like web-browsers are event driven programs that run a loop, checking for user input, ready
+                            to make changes dependent on the data that was recieved and then ouputs it on the screen. Event driven programming enabe 
+                            developers to create real-time applications that are more flexible, innovative and responsive than traditional programs. <br>
+                            <br>
+                            <!--button that links to a YouTube tutorial on writing code for a card game-->
+                            <button><a href="https://www.youtube.com/watch?v=NxRwIZWjLtE">Click here for tutorial on card game build</a></button>  
+                            <td>Common data structures in programming are: <br>
+                                <h4>-arrays: lists of related values identified by it's index number <br></h4>
+                                        1. parallel arrays - two or more arrays are used to represent a group of data where each corresponding array index
+                                        is associated with a matching field for a specific record. <br>
+                                        2. associative arrays - a data structure that uses strings as indexes to access the elements of an array instead of 
+                                        it's numerical index 
+                                <h4>-linked lists: linear collection of nodes, where each node contains data and points to the next node <br> <br>
+                                -stacks: organized items by a last-in, first-out order; most recent item added to the stack will be the first removed <br> <br>
+                                -trees: non-linear structure that holds data in a hierarchical way, utilizing nodes by links that connected in a tree <br></h4>
+                                    1. binary trees - common type of tree where each parent nodes has at most two children; the purpose of these types of 
+                                    search trees is to fulfill a certain ordering property <br>
+                                    2. leaves - last nodes in a tree that bare no children <br>
+                                    <h4></h4>
+                        
+                            </h4></td>  
+                        </tr><!--Fourth row, set up underneath the column headers, divided by gridlines-->
+                            </td> <!--Explanation of selected key points that were discussed in class corresponding to each header category-->
+                            <td>Javascript takes precedence over HTML in web programming. Script open and close tags marks the location of the scripts, 
+                                where we provide the computer with special instructions to carry out once the webpage is loaded. 
+                                Javascript uses "camel casing" for it's naming standard. "Camel case" becuase the first letter of a word or phrase
+                                is lower case for example: superMarioStar.Depending on when you want your Javascript to load, 
+                                you can place your script tags in the head or body section of your HTML. You can also have your 
+                                Javascript load from a separate file that you can link to your html document.
+                                Some of places where Javascript is used: <br>
+                                <h4>- Mobile Apps <br>
+                                - Interactive Maps <br>
+                                - Games <br>
+                                - Virtual Reality <br>
+                                - Animations <br>
+                                - Online reservation booking systems for Restaurants <br>
+                                - Data Visualisation <br> </h4>
+
+                                <!--Fun button created that displays an alert when clicked-->
+                                <input type="btn" style="color: rgb(28, 9, 1);" value="Click here to Poke" onclick="sayOuch();"/>
+                            <td>In programming a loop is defined as a sequence of repetitive instructions that are automated until a certain condition is met. Some examples of loops are: 
+                                <h4>-for loops: <br> repeats a specific block of code until a certain condition has been fulfilled <br>
+                                -nested loops: <br> a loop within another loop <br>      
+                                -while loop: <br> executes a specific block of code repetitively while the condition is true; continues loop until the condition is false <br>     
+                                -do while loop: <br>executes a block of code at least once, then repeats the block as long a certain condition stays true; checks the condition <br>
+                                after each block of code is excecuted <br>
+                                -do until loop: <br> <h4>
+                            </td>
+                            <td>Input Validation is the process of testing and validating user input, verifying if it meets a specific criteria and is in the correct format.
+                            A loop is iterated until the data is false or bad to determine the validation of user input. Empty input or wrong input are types of errors.
+                            Common errors are: <br> 
+                            <h4>-state abbreviations (2 character strings only) <br>
+                            -zipcodes (5 character strings minimum, 9 characters maximum) <br>
+                            -wages (numerical values only) <br>
+                            -dates (numberical values usually) <br>
+                            -time (numerical values) <br> </h4>
+                            Data Integrity may be compromised if Input Validation is not ensured; resulting in data corruption, processing the wrong information, 
+                            inaccuracy of outputs, unreliable system leading to unauthorized access leaving your system vulnerable to security attacks that may inject
+                            harmful code.  Which in turn can tamper with the software and/or steal your data. 
+                            <td>Object Oriented Programming (OOP) is a model for writing programs and programming languages based on abstraction of objects,
+                            through this process a programmer conceals the data and code except for what is relevant to an object in order to reduce complexity,
+                            making it easier to work with. This can contain data in fields known as attributes or properties and code in procedures known as methods.
+                            For instance a button class has variables for data and functions, which can be inherited by a subclass and created as a subset of the 
+                            button class. Objects are instances of classes. Using a concept known as structure or struct we can store multiple variables in one name: <br>
+                            <h4>struct myDog { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;var breed; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;var size; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;var coat; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;var color; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;var name; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;var weight; <br>
+                            }</h4>
+                            <!--image animation of a dog howling-->
+                            <img id="howlingWolf" src="./wolf howling.gif">
+                            <td>Common data structures continued... <br>
+                            <h4>-queues: linear data structure tha stores and manipulates the data as a First In First Out order. Consists of two ends; front and rear,
+                                 where elements are added and removed, respectively. <br></h4>
+                                 1. Used to manage threads, implements priority queuing and is impartial.An example where this is used is in
+                                    virutal messaging apps to maintain the order of text messages.
+                            <h4>-heaps: a binary tree-based data structure; reserved area of memory in a programming language. The value of the parent node is less than 
+                                or equal to the value of it's children</h4> 
+                            <h4>-graphs: non-linear data structure that represents a network of interconnected nodes connected by edges. Each edge signifies a relationship
+                                 between two nodes. Representation of complex connections between different data points within a system like a map with cities and roads.
+                                 Cities are to nodes as roads are to edges connecting them.  <br></h4>
+                            <h4>-hash tables: stores key-value pairs and uses a hash function to generate an index value for each key(data element) to retrieve the data<br></h4>
+                                1. Hash tables provide faster access to data due to the index value acting as a key <br>
+                                2. Widely used in many kinds of computer software for its efficiency in comparison to search trees <br>
+                            </td>    
+                    </tr>
+                            <footer>
+                                Jena Kahili <br>
+                                University of Advancing Technology <br>
+                                2625 W. Baseline Rd. <br>
+                                Tempe, AZ, 85283  <br>
+                            </footer>
+                </body>
+    </table>
+</html>
