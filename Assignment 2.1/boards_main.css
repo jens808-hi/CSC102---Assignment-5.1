@@ -1,0 +1,47 @@
+/*
+declaration block: 
+
+selector{ 
+    property: value1;
+    property2: value2;
+    property3: value3;
+}
+*/
+
+body{
+background-color:  rgb(227, 134, 203);
+color: black;
+}
+
+nav{
+height: 80px;
+width: 200px;
+float: left;
+padding: 5px;
+line-height: 30px;
+background-color: blueviolet;
+color: black;
+}
+
+footer{
+text-align: center;
+margin-right: 200px;
+}
+
+h1{
+text-align: center;
+font-family: 'Franklin Gothic Medium';
+border-color: aliceblue;
+}
+
+h3{
+text-align: left;
+font-size: medium;
+font-weight: 100px;
+font-family: 'Lucida Sans';
+}
+h4{
+text-align: left;
+font-size: medium;
+font-family: 'Lucida Sans';
+}
