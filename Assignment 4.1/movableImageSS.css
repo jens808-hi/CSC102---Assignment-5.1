@@ -1,0 +1,44 @@
+/*
+declaration block: 
+
+selector{ 
+    property: value1;
+    property2: value2;
+    property3: value3;
+}
+*/
+
+body{
+    background-color:  rgb(114, 241, 241);
+    color: black;
+}
+
+nav{
+    height: 300px;
+    width: 150px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    text-align: left;
+    margin-bottom: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+#container {
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#movingSSImage {
+    position: absolute;
+}
